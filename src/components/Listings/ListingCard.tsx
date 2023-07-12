@@ -54,7 +54,7 @@ const ListingCard = ({
           <span>&nbsp;·&nbsp;</span>
           <span>{dates}</span>
         </div>
-        <div className="mt-1">
+        <div className="mt-[6px]">
           <span className="font-medium">{cost}</span>&nbsp;
         </div>
       </div>
