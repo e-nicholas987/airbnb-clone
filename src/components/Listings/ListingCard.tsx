@@ -6,6 +6,7 @@ interface ListingsProps {
   name: string;
   host: string;
   dates: string;
+  duration: string;
   cost: string;
   rating: string;
   like: boolean;
@@ -17,6 +18,7 @@ const ListingCard = ({
   name,
   host,
   dates,
+  duration,
   cost,
   rating,
   like,
@@ -50,7 +52,7 @@ const ListingCard = ({
           Hosted by <span className="capitalize"> {host}</span>
         </div>
         <div className="text-secondary ">
-          <span> 3 nights</span>
+          <span> {duration}</span>
           <span>&nbsp;·&nbsp;</span>
           <span>{dates}</span>
         </div>

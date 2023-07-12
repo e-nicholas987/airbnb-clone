@@ -72,7 +72,7 @@ const Filters = () => {
         <div className=" flex items-center relative">
           <div
             className={cn(
-              "hidden md:grid absolute left-0 h-full z-10  bg-white place-content-center transition all duration-300",
+              "hidden md:grid absolute left-0 h-full z-10  bg-white place-content-center transition all",
               {
                 "opacity-0 ": !showScrollLeft,
                 "opacity-100": showScrollLeft,

@@ -4,8 +4,7 @@ import ListingCard from "./Listings/ListingCard";
 import Container from "./Global/Container";
 
 const Listings = () => {
-  const [listingsData, setListingData] =
-    useState<ListingsData[]>(listings);
+  const [listingsData, setListingData] = useState<ListingsData[]>(listings);
   const handleLike = (id: number) => {
     setListingData((prev) => {
       return prev.map((listing) => {
@@ -37,6 +36,7 @@ const Listings = () => {
             name={listing.name}
             host={listing.host}
             dates={listing.dates}
+            duration={listing.duration}
             like={listing.like}
             cost={listing.cost}
             rating={listing.rating}
